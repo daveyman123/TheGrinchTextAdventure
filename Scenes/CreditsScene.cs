@@ -18,6 +18,7 @@ namespace TheGrinch.Scenes
             Console.WriteLine("https://asciiart.website/index.php?art=holiday/christmas/snowman");
             //base always print out inventory possibly
             base.Run();
+            Console.ReadLine();
         }
     }
 }

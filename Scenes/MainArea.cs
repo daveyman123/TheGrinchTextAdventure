@@ -10,7 +10,7 @@ namespace TheGrinch.Scenes
         OptionsHelper Opt_Helper;
         public MainArea(Game game) : base(game)
         {
-            string mainArt = Art.Main();
+            string mainArt = Art.Train();
             
             Opt_Helper = new OptionsHelper(mainArt);
         }
@@ -18,6 +18,8 @@ namespace TheGrinch.Scenes
 
         public override void Run()
         {
+            Console.WriteLine("The train pulls up and passengers scramble to disembark and board.");
+
             int Choice = Opt_Helper.MenuChoice();
 
             switch (Choice)
@@ -32,7 +34,8 @@ namespace TheGrinch.Scenes
                     //go to the park
                     return;
                 case 4:
-                    if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else myGame.myMainAreaScene.Run();
+                    //System.Threading.Thread.Sleep(100);
+                    if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
                     return;
             }
         }

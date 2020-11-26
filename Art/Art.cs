@@ -90,7 +90,17 @@ namespace TheGrinch
             return HelperFunctions.ArtReadHelper.ascii("Grinch");
         }
         public static string Reindeer() { return HelperFunctions.ArtReadHelper.ascii("Reindeer"); }
+
+
+        public static string Train() { return @"
+___________   _______________________________________^__
+ ___   ___ |||  ___   ___   ___    ___ ___  |   __  ,----\
+|   | |   |||| |   | |   | |   |  |   |   | |  |  | |_____\
+|___| |___|||| |___| |___| |___|  | O | O | |  |  |        \
+           |||                    |___|___| |  |__|         )
+___________|||______________________________|______________/
+           |||                                        /--------
+-----------'''---------------------------------------'
+"; }
     }
-
-
-
+}

@@ -59,7 +59,7 @@ namespace TheGrinch.Scenes
                     myGame.myMainAreaScene.Run();
                     return;
                 case 2:
-                    ConsoleUtils.QuitConsole();
+                    if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
                     return;
                 case 3:
                     myGame.myCreditsScene.Run();

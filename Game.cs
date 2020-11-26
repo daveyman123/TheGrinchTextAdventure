@@ -53,5 +53,11 @@ namespace TheGrinch
         {
             return MusicPlayer;
         }
+
+        //set play state
+        public static void setPlay(bool playState)
+        {
+            play = playState;
+        }
     }
 }

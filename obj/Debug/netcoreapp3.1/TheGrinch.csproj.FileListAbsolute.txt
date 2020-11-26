@@ -21,3 +21,4 @@ C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\runtimes
 C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\David\source\repos\TheGrinch\TheGrinch\obj\Debug\netcoreapp3.1\TheGrinch.csproj.CopyComplete
 C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Audio\mainMusic.wav
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\Reindeer.txt
