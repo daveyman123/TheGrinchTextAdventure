@@ -1,72 +1,105 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using static System.Console;
 
 namespace TheGrinch.HelperFunctions
 {
     class OptionsHelper
+
     {
+        int selectedIndex;
         String[] opt = new String[] { "Go to the North Pole", "Go to the Grinches Mansion", "Go to the Park", "Exit Game" };
         string prompt = "";
 
         public OptionsHelper(string prompt)
         {
             this.prompt = prompt;
+            int selectedIndex;
         }
         public OptionsHelper(string[] opt)
         {
             this.opt = opt;
+            int selectedIndex;
         }
         public OptionsHelper(string prompt, String[] opt)
         {
             this.opt = opt;
             this.prompt = prompt;
+            int selectedIndex;
         }
 
-        public int MenuChoice()
+        private void DisplayOptions()
         {
 
             string output = "";
             output += "\n " + prompt + "\n";
-            int Choice = 0;
-            output += "Your options are: ";
-            int counter = 1;
-            for (int i = 0; i < opt.Length - 1; i++)
+            
+            output += "\n\nYour options are: \n";
+            
+            
+            string prefix;
+            for (int i = 0; i < opt.Length; i++)
             {
+                string currentOption = opt[i];
+                
 
-                output += counter + ") " + opt[i] + " or ";
-                counter = counter + 1;
+                if (i == selectedIndex)
+                {
+                    prefix = "*";
+                    
+                }
+                else
+                {
+                    prefix = " ";
+                    
+                }
 
+                output += prefix + opt[i] + "\n";
+                
             }
 
-            output += opt.Length + ") " + opt[opt.Length - 1] + "\nType a number corresponding to your choice \n";
+            Console.WriteLine("\nUse the arrow keys to select your choice and press enter \n");
             Console.WriteLine(output);
-            string input = Console.ReadLine();
+           
 
-            Console.Clear();
-            int.TryParse(input, out Choice);
-
-            bool isNumeric = (!string.IsNullOrEmpty(input) && input.All(Char.IsDigit));
+        
 
 
 
-            while (!isNumeric || Choice > opt.Length || Choice <= 0)
+
+
+          
+           
+        }
+        public int MenuChoice()
+        {
+            ConsoleKey keyPressed;
+            do
             {
-                Console.WriteLine(output);
-               
-                Console.WriteLine("you must enter a digit between 1-" + opt.Length);
-               
-                input = Console.ReadLine();
+                Clear();
+                DisplayOptions();
+                ConsoleKeyInfo keyInfo = ReadKey(true);
+                keyPressed = keyInfo.Key;
+                if(keyPressed == ConsoleKey.UpArrow)
+                {
 
-
-                int.TryParse(input, out Choice);
-
-                isNumeric = !string.IsNullOrEmpty(input) && input.All(Char.IsDigit);
-
-
-            }
-            Console.Clear();
-            return Choice;
+                    selectedIndex--;
+                    if (selectedIndex == -1)
+                    {
+                        selectedIndex = opt.Length - 1;
+                    }
+                }
+                else if (keyPressed == ConsoleKey.DownArrow)
+                {
+                    selectedIndex++;
+                    if (selectedIndex == opt.Length)
+                    {
+                        selectedIndex = 0;
+                    }
+                }
+            } while (keyPressed != ConsoleKey.Enter);
+            return selectedIndex +1;
         }
     }
 }

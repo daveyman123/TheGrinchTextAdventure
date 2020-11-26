@@ -15,7 +15,9 @@ namespace TheGrinch.Scenes
             Console.WriteLine("Snowdrift Waltz” by Naoshi Mizuta from Final Fantasy XI: Wings of the Goddess: \n" +
                 "https://www.youtube.com/watch?time_continue=21&v=2b-WsCS3Sk4&feature=emb_title");
             Console.WriteLine("https://freesound.org/");
-            Console.WriteLine("https://asciiart.website/index.php?art=holiday/christmas/snowman");
+            Console.WriteLine("https://asciiart.website/index.php?art=holiday/christmas/");
+            Console.WriteLine("https://www.asciiart.eu/holiday-and-events/christmas/other");
+            Console.WriteLine("ascii-art.de/ascii/t/train.txt");
             //base always print out inventory possibly
             base.Run();
             Console.ReadLine();

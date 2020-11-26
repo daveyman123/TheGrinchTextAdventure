@@ -10,6 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Art\HappyHolidays.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Art\MailBox.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Art\Reindeer.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
