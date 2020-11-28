@@ -9,33 +9,40 @@ namespace TheGrinch.HelperFunctions
 
     {
         int selectedIndex;
-        String[] opt = new String[] { "Go to the North Pole", "Go to the Grinches Mansion", "Go to the Park", "Exit Game" };
+        String[] opt = new String[] { "Go to the North Pole", "Go to the Grinches Mansion", "Go to Main Street","View INVENTORY", "Exit Game" };
         string prompt = "";
+       
 
         public OptionsHelper(string prompt)
         {
             this.prompt = prompt;
-            int selectedIndex;
+            
+
         }
         public OptionsHelper(string[] opt)
         {
             this.opt = opt;
-            int selectedIndex;
+            
+
         }
         public OptionsHelper(string prompt, String[] opt)
         {
             this.opt = opt;
             this.prompt = prompt;
-            int selectedIndex;
+            //add inventory option to options
+            
         }
 
         private void DisplayOptions()
         {
 
+           
+            
+
             string output = "";
             output += "\n " + prompt + "\n";
-            
-            output += "\n\nYour options are: \n";
+            output += "Use the arrow keys to select your choice and press enter\n";
+            output += "\nYour options are: \n";
             
             
             string prefix;
@@ -59,7 +66,7 @@ namespace TheGrinch.HelperFunctions
                 
             }
 
-            Console.WriteLine("\nUse the arrow keys to select your choice and press enter \n");
+           
             Console.WriteLine(output);
            
 
@@ -78,6 +85,7 @@ namespace TheGrinch.HelperFunctions
             do
             {
                 Clear();
+               
                 DisplayOptions();
                 ConsoleKeyInfo keyInfo = ReadKey(true);
                 keyPressed = keyInfo.Key;

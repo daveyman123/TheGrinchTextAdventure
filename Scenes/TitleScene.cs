@@ -64,6 +64,9 @@ namespace TheGrinch.Scenes
                 case 3:
                     myGame.myCreditsScene.Run();
                     return;
+                case 4:
+                    myGame.myInventoryScene.Run();
+                    return;
 
             }
 

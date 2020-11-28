@@ -26,14 +26,18 @@ namespace TheGrinch.Scenes
             {
                 case 1:
                     //go to north pole
+                    myGame.myNorthPoleScene.Run();
                     return;
                 case 2:
                     //go to grinch's mansion
                     return;
                 case 3:
-                    //go to the park
+                    //go to Main street
                     return;
                 case 4:
+                    myGame.myInventoryScene.Run();
+                    return;
+                case 5:
                     //System.Threading.Thread.Sleep(100);
                     if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
                     return;

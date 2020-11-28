@@ -19,7 +19,7 @@
     <None Update="Art\Reindeer.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Art\Grinch.txt">
+    <None Update="Art\Grinch1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Art\Title.txt">

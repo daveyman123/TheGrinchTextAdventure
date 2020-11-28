@@ -7,15 +7,27 @@ namespace TheGrinch
 {
     class Game
     {
+        //add inventory
+        public Inventory myInventory;
+
         //add a soundplayer to the game
         SoundPlayer MusicPlayer;
 
+        //current scene
+        public string currentScene;
         //make scenes
         public Scene myTitleScene;
         public Scene myCreditsScene;
         public Scene myMainAreaScene;
+        public Scene myNorthPoleScene;
+        public Scene myReadLetterScene;
+        public Scene myInventoryScene;
         public Game()
         {
+         
+            
+            //instantiate inventory
+            myInventory = new Inventory();
 
             //instantiate soundplayer
             MusicPlayer = new SoundPlayer();
@@ -24,6 +36,9 @@ namespace TheGrinch
             myTitleScene = new TitleScene(this);
             myCreditsScene = new CreditsScene(this);
             myMainAreaScene = new MainArea(this);
+            myNorthPoleScene = new NorthPole(this);
+            myReadLetterScene = new ReadLetter(this);
+            myInventoryScene = new InventoryScene(this);
             
         }
 
