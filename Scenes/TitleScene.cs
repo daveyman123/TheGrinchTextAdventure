@@ -39,6 +39,8 @@ namespace TheGrinch.Scenes
         }
         public override void Run()
         {
+            scenes.Add(this.GetType().Name);
+
             //get soundplayer
             MusicPlayer = myGame.getSoundPlayer();
             MusicPlayer.SoundLocation = "Audio/mainMusic.wav";

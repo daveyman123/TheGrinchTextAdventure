@@ -16,7 +16,9 @@ namespace TheGrinch.Scenes
 
         public override void Run()
         {
-            string[] options = new string[] { "Go to Santa's Workshop", "the Reindeer Stable", "open the Mail Box", "leave the North Pole", "Exit Game" };
+            Scene.AddScene(this.GetType().Name);
+
+            string[] options = new string[] { "Go to Santa's Workshop", "the Reindeer Stable", "open the Mail Box", "leave the North Pole","View INVENTORY", "Exit Game" };
             string northPoleArt = Art.MailBox();
             HelperFunctions.OptionsHelper Opt_Helper = new HelperFunctions.OptionsHelper(northPoleArt, options);
             int Choice = Opt_Helper.MenuChoice();
@@ -37,11 +39,12 @@ namespace TheGrinch.Scenes
                     myGame.myMainAreaScene.Run();
                     return;
                 case 5:
-                    if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
-                    return;
-                case 6:
                     myGame.myInventoryScene.Run();
                     return;
+                case 6:
+                    if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
+                    return;
+
 
             }
         }

@@ -28,7 +28,7 @@ namespace TheGrinch
             while (Game.getPlay())
             {
                 Game myGame = new Game();
-                myGame.myReadLetterScene.Run();
+                myGame.Start();
             }
             ConsoleUtils.QuitConsole();
         }

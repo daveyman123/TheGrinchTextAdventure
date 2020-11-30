@@ -22,6 +22,7 @@ namespace TheGrinch
         public Scene myNorthPoleScene;
         public Scene myReadLetterScene;
         public Scene myInventoryScene;
+        public Scene myMainStreetScene;
         public Game()
         {
          
@@ -39,6 +40,7 @@ namespace TheGrinch
             myNorthPoleScene = new NorthPole(this);
             myReadLetterScene = new ReadLetter(this);
             myInventoryScene = new InventoryScene(this);
+            myMainStreetScene = new MainStreet(this);
             
         }
 
@@ -53,7 +55,7 @@ namespace TheGrinch
         {
 
             Console.Clear();
-            myTitleScene.Run();
+            myMainAreaScene.Run();
 
 
         }

@@ -17,7 +17,10 @@ namespace TheGrinch.Scenes
 
 
         public override void Run()
+
         {
+            scenes.Add(this.GetType().Name);
+
             Console.WriteLine("The train pulls up and passengers scramble to disembark and board.");
 
             int Choice = Opt_Helper.MenuChoice();
@@ -33,6 +36,7 @@ namespace TheGrinch.Scenes
                     return;
                 case 3:
                     //go to Main street
+                    myGame.myMainStreetScene.Run();
                     return;
                 case 4:
                     myGame.myInventoryScene.Run();

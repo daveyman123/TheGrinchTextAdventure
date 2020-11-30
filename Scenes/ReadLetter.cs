@@ -19,7 +19,8 @@ namespace TheGrinch.Scenes
 
         public override void Run()
         {
-            
+            scenes.Add(this.GetType().Name);
+
             //for this specific class take the art + the text of the letter we want to print out
             text = Art.Letter() + "\n" +letterText+"\n";
             options = new string[]{ "take letter", "leave letter", "leave mailbox", "Exit Game" };
