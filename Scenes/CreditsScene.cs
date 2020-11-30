@@ -19,6 +19,7 @@ namespace TheGrinch.Scenes
             Console.WriteLine("https://www.asciiart.eu/holiday-and-events/christmas/other");
             Console.WriteLine("ascii-art.de/ascii/t/train.txt");
             Console.WriteLine("https://bigsoundbank.com/");
+            Console.WriteLine("\nDownload the source Code here: https://github.com/daveyman123/TheGrinchTextAdventure");
             //base always print out inventory possibly
             base.Run();
             Console.ReadLine();
