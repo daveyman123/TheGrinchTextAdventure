@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TheGrinch.HelperFunctions;
-
+using System.Media;
 namespace TheGrinch.Scenes
 {
     class MainArea : Scene
@@ -19,7 +19,16 @@ namespace TheGrinch.Scenes
         public override void Run()
 
         {
-            scenes.Add(this.GetType().Name);
+            Scene.AddScene(this.GetType().Name);
+
+            if (GetScene()[scenes.Count - 2] != "InventoryScene") 
+            { 
+            SoundPlayer mainSoundPlayer = myGame.getSoundPlayer();
+            mainSoundPlayer.SoundLocation = "Audio/train.wav";
+            mainSoundPlayer.Load();
+            mainSoundPlayer.Play();
+             }
+            
 
             Console.WriteLine("The train pulls up and passengers scramble to disembark and board.");
 
