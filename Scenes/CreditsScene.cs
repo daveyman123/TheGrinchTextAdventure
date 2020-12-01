@@ -10,8 +10,12 @@ namespace TheGrinch.Scenes
         {
 
         }
-        public override void Run() { 
+        public override void Run() {
+            Console.WriteLine("Thanks for playing The Grinch!\n" +
+                Art.Ham()
+                + "\n");
             Console.WriteLine("https://ascii.co.uk/art/reindeer");
+            Console.WriteLine("https://www.asciiart.eu/");
             Console.WriteLine("Snowdrift Waltz” by Naoshi Mizuta from Final Fantasy XI: Wings of the Goddess: \n" +
                 "https://www.youtube.com/watch?time_continue=21&v=2b-WsCS3Sk4&feature=emb_title");
             Console.WriteLine("https://freesound.org/");

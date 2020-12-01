@@ -55,7 +55,7 @@ namespace TheGrinch
         {
 
             Console.Clear();
-            myNorthPoleScene.Run();
+            myTitleScene.Run();
 
 
         }
