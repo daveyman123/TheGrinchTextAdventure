@@ -22,7 +22,7 @@ namespace TheGrinch.Scenes
 
 
 
-            Scene.AddScene(this.GetType().Name);
+            //Scene.AddScene(this.GetType().Name);
 
 
             List<string> iterateOptions = new List<string>();
@@ -62,37 +62,41 @@ namespace TheGrinch.Scenes
 
 
                 //run the previous scene by searching for it in the previous index of scenes list
-                if (GetScene()[scenes.Count - 2] == "MainArea")
+                if (GetScene()[scenes.Count - 1] == "MainArea")
                 {
                     myGame.myMainAreaScene.Run();
                 }
-                else if (GetScene()[scenes.Count - 2] == "NorthPole")
+                else if (GetScene()[scenes.Count - 1] == "NorthPole")
                 {
                     myGame.myNorthPoleScene.Run();
                     selectedItem = 0;
                 }
-                else if (GetScene()[scenes.Count - 2] == "MainStreet")
+                else if (GetScene()[scenes.Count - 1] == "MainStreet")
                 {
                     myGame.myMainStreetScene.Run();
                     selectedItem = 0;
                 }
-                else if (GetScene()[scenes.Count - 2] == "Workshop")
+                else if (GetScene()[scenes.Count - 1] == "Workshop")
                 {
                     myGame.myWorkshopScene.Run();
                     selectedItem = 0;
                 }
-                else if (GetScene()[scenes.Count - 2] == "BobbysHouse")
+                else if (GetScene()[scenes.Count - 1] == "BobbysHouse")
                 {
                     myGame.myBobbysHouseScene.Run();
                     selectedItem = 0;
 
+             
 
+                }
 
+                else
+                {
+                    myGame.myMainAreaScene.Run();
                 }
 
 
-
-                }
+            }
                 else if (selectedItem > 0)
                 {
 
