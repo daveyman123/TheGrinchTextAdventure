@@ -110,50 +110,10 @@ namespace TheGrinch
 *~*:._.:*~*:._.:*~*:*~*:._.:*~*:._.:*~*:*~*:._.:*~*:._.:*~*:*~*:._.:*~*:._.:*~*:*~*:._.:*~*:._.:*~*:*~*:._.:*~*:._.:"; }
         public static string HappyHolidays() { return ArtReadHelper.ascii("HappyHolidays"); }
        
-        public static string InHome() { return @"
-                  _+_      
-                  /|\
-                   *     
-                 i/|\i            
-                 // \\*      
-                */( )\\      
-               i/*/ \ \i           
-               / /* *\+\           
-              */// + \*\\*          
-             i/  /^  ^\  \i              
-             / /+/ ()^ *\ \            
-            i//*/_^- -  \*\i             
-            / // * ^ \ * \ \             
-          i/ /*  ^  * ^ + \ \i         
-          / / // / | \ \  \ *\        
-                  |||                
-                  |||                
-           -------|||--------
-
-"; }
+        public static string InHome() { return ArtReadHelper.ascii("Tree") ; }
         public static string InHomePresents()
         {
-            return @"
-                  _+_      
-                  /|\
-                   *     
-                 i/|\i            
-                 // \\*      
-                */( )\\      
-               i/*/ \ \i           
-               / /* *\+\           
-              */// + \*\\*          
-             i/  /^  ^\  \i              
-             / /+/ ()^ *\ \            
-            i//*/_^- -  \*\i             
-            / // * ^ \ * \ \             
-          i/ /*  ^  * ^ + \ \i         
-          / / // / | \ \  \ *\  ____(|)____        
-                  |||          |_____|_____|      
-                  |||          |     |     |      
-          --------|||--------  |_____|_____|
-
-";
+            return ArtReadHelper.ascii("TreePresent");
         }
 
 
