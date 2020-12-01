@@ -25,7 +25,7 @@ namespace TheGrinch.Scenes
             switch (Choice)
             {
                 case 1:
-                    //go to santa's workshop
+                    myGame.myWorkshopScene.Run();
                     return;
                 case 2:
                     // go to stable

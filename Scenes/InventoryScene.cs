@@ -14,7 +14,7 @@ namespace TheGrinch.Scenes
             art = Art.bag();
             text = "";
             myGame = game;
-            
+
         }
 
         public override void Run()
@@ -27,10 +27,10 @@ namespace TheGrinch.Scenes
 
             List<string> iterateOptions = new List<string>();
 
-            //make the options helper print out options
-            
-            
-            foreach(Item element in myGame.myInventory.invGet())
+           
+
+
+            foreach (Item element in myGame.myInventory.invGet())
             {
                 iterateOptions.Add(element.getName());
             }
@@ -48,7 +48,7 @@ namespace TheGrinch.Scenes
             selectedItem = opts_helper.MenuChoice();
 
             //add this scene to the list of scenes
-            
+
 
             if (selectedItem == iterateOptions.Count)
             {
@@ -62,11 +62,12 @@ namespace TheGrinch.Scenes
 
 
                 //run the previous scene by searching for it in the previous index of scenes list
-                if (GetScene()[scenes.Count -2] == "MainArea")
-                    {
-                        myGame.myMainAreaScene.Run();
-                    }
-                else if (GetScene()[scenes.Count-2] == "NorthPole"){
+                if (GetScene()[scenes.Count - 2] == "MainArea")
+                {
+                    myGame.myMainAreaScene.Run();
+                }
+                else if (GetScene()[scenes.Count - 2] == "NorthPole")
+                {
                     myGame.myNorthPoleScene.Run();
                     selectedItem = 0;
                 }
@@ -75,28 +76,39 @@ namespace TheGrinch.Scenes
                     myGame.myMainStreetScene.Run();
                     selectedItem = 0;
                 }
+                else if (GetScene()[scenes.Count - 2] == "Workshop")
+                {
+                    myGame.myWorkshopScene.Run();
+                    selectedItem = 0;
+                }
+                else if (GetScene()[scenes.Count - 2] == "BobbysHouse")
+                {
+                    myGame.myBobbysHouseScene.Run();
+                    selectedItem = 0;
 
 
+
+                }
+
+
+
+                }
+                else if (selectedItem > 0)
+                {
+
+                    desc = myGame.myInventory.invGet()[selectedItem - 1].getDescription();
+                    text = art + desc + "\n\n" + "select an item to view its description \n";
+                    myGame.myInventoryScene.Run();
+                    selectedItem = 0;
+
+                }
 
 
 
 
 
             }
-            else if (selectedItem > 0)
-            {
-                
-                desc = myGame.myInventory.invGet()[selectedItem-1].getDescription();
-                text = art + desc + "\n\n" + "select an item to view its description \n";
-                this.Run();
-                selectedItem = 0;
-
-            }
-
-            
-
-           
-
         }
     }
-}
+
+

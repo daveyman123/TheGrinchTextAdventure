@@ -10,6 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Art\mainstreet.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Art\ham.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

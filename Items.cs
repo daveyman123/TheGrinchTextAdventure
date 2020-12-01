@@ -48,6 +48,19 @@ namespace TheGrinch
         {
             ItemsLst.Remove(itm);
         }
+        public bool Contains(string Name)
+        {
+            bool hasItem = false;
+            foreach (Item element in ItemsLst)
+            {
+                if (element.getName() == Name)
+                {
+                    hasItem = true;
+                }
+
+            }
+            return hasItem;
+        }
 
         public Item returnItem(string Name)
         {

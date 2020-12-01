@@ -4,9 +4,9 @@ using System.Text;
 
 namespace TheGrinch.Scenes
 {
-    class SusysHouse : Scene
+    class SuzysHouse : Scene
     {
-        public SusysHouse(Game game) : base(game)
+        public SuzysHouse(Game game) : base(game)
         {
 
         }

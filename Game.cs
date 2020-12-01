@@ -13,8 +13,7 @@ namespace TheGrinch
         //add a soundplayer to the game
         SoundPlayer MusicPlayer;
 
-        //current scene
-        public string currentScene;
+
         //make scenes
         public Scene myTitleScene;
         public Scene myCreditsScene;
@@ -23,6 +22,9 @@ namespace TheGrinch
         public Scene myReadLetterScene;
         public Scene myInventoryScene;
         public Scene myMainStreetScene;
+        public Scene mySuzysHouseScene;
+        public Scene myBobbysHouseScene;
+        public Scene myWorkshopScene;
         public Game()
         {
          
@@ -38,9 +40,12 @@ namespace TheGrinch
             myCreditsScene = new CreditsScene(this);
             myMainAreaScene = new MainArea(this);
             myNorthPoleScene = new NorthPole(this);
+            myWorkshopScene = new Workshop(this);
             myReadLetterScene = new ReadLetter(this);
             myInventoryScene = new InventoryScene(this);
             myMainStreetScene = new MainStreet(this);
+            myBobbysHouseScene = new BobbysHouse(this);
+            mySuzysHouseScene = new SuzysHouse(this);
             
         }
 
@@ -55,7 +60,7 @@ namespace TheGrinch
         {
 
             Console.Clear();
-            myTitleScene.Run();
+            myBobbysHouseScene.Run();
 
 
         }
