@@ -16,7 +16,7 @@ namespace TheGrinch.Scenes
         {
             AddScene(this.GetType().Name);
 
-            text = Art.MainStreet() + "\n Welcome to the Main Street!";
+            text = Art.MainStreet() + "\n\nWelcome to the Main Street! The weather is cold and houses are decorated for the season.";
             options = new string[]{ "go to Suzy's house", "go to Bobby's house", "leave Main Street", "View INVENTORY", "Exit Game"};
             base.Run();
             //Choice = opt_helper.MenuChoice();

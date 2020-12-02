@@ -58,3 +58,5 @@ C:\Users\daveyman123\source\repos\daveyman123\TheGrinchTextAdventure\obj\Debug\n
 C:\Users\daveyman123\source\repos\daveyman123\TheGrinchTextAdventure\obj\Debug\netcoreapp3.1\TheGrinch.genruntimeconfig.cache
 C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\Tree.txt
 C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\TreePresent.txt
+C:\Users\daveyman123\source\repos\daveyman123\TheGrinchTextAdventure\bin\Debug\netcoreapp3.1\Art\Tree.txt
+C:\Users\daveyman123\source\repos\daveyman123\TheGrinchTextAdventure\bin\Debug\netcoreapp3.1\Art\TreePresent.txt
