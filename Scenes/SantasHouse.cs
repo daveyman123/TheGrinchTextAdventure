@@ -30,8 +30,8 @@ namespace TheGrinch.Scenes
                     addText = "Santa responds that 'he is in a hurry because this year there is a lot of trouble.\n" +
                         "The Grinch has taken extra measures to destroy the christmas spirit by stealing presents\n" +
                         "namely on Main Street!'\n" +
-                        "Santa tugs his sack to rest it more firmly on his shoulder. 'As you may have seen from letters sent to the North Pole, there are distraught\n" +
-                        "children on mainstreet it seems the grinch is messing with MY delivery system and now there is confusion throughout the Elf fleet! time is running out\n" +
+                        "Santa tugs his sack to rest it more firmly on his shoulder. \n'As you may have seen from letters sent to the North Pole, there are distraught\n" +
+                        "children on mainstreet it seems the grinch is messing with MY delivery system and now there is confusion throughout the Elf delivery \n fleet! time is running out\n" +
                         "and I am in need of a CHRISTMAS MIRACLE ";
                     myGame.mySantaScene.Run();
                     return;

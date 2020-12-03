@@ -10,8 +10,9 @@ namespace TheGrinch.Scenes
         OptionsHelper Opt_Helper;
         public MainArea(Game game) : base(game)
         {
-            string mainArt = Art.Train();
-            
+            string mainArt = "The train pulls up to the Train Depot and passengers scramble to disembark and board. \n"+Art.Train();
+
+
             Opt_Helper = new OptionsHelper(mainArt);
         }
 
@@ -30,7 +31,6 @@ namespace TheGrinch.Scenes
              }
             
 
-            Console.WriteLine("The train pulls up and passengers scramble to disembark and board.");
 
             int Choice = Opt_Helper.MenuChoice();
 
