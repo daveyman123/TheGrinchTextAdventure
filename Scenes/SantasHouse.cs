@@ -31,13 +31,13 @@ namespace TheGrinch.Scenes
                         "The Grinch has taken extra measures to destroy the christmas spirit by stealing presents\n" +
                         "namely on Main Street!'\n" +
                         "Santa tugs his sack to rest it more firmly on his shoulder. \n'As you may have seen from letters sent to the North Pole, there are distraught\n" +
-                        "children on mainstreet it seems the grinch is messing with MY delivery system and now there is confusion throughout the Elf delivery \n fleet! time is running out\n" +
+                        "children on mainstreet it seems the grinch is messing with MY delivery system and now there is confusion\nthroughout the Elf delivery fleet! time is running out\n" +
                         "and I am in need of a CHRISTMAS MIRACLE ";
                     myGame.mySantaScene.Run();
                     return;
                 case 2:
                     addText =
-                         myGame.GetName() + ",you, can actually help by taking gifts, found in the workshop, to the proper addresses \n" +
+                         myGame.GetName().ToUpper() + ", you, can actually help by taking gifts, found in the workshop, to the proper addresses \n" +
                         "or *heaven forbid*, you could go to the grinch's mansion to comfront that PORCH THIEFING Basterd yourself!\n" +
                         "Go now, leave me.";
 
