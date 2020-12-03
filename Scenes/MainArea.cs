@@ -7,10 +7,11 @@ namespace TheGrinch.Scenes
 {
     class MainArea : Scene
     {
+        string mainArt;
         OptionsHelper Opt_Helper;
         public MainArea(Game game) : base(game)
         {
-            string mainArt = "The train pulls up to the Train Depot and passengers scramble to disembark and board. \n"+Art.Train();
+            mainArt = "The train pulls up to the Train Depot and passengers scramble to disembark and board. \n"+Art.Train();
 
 
             Opt_Helper = new OptionsHelper(mainArt);
@@ -38,6 +39,26 @@ namespace TheGrinch.Scenes
             {
                 case 1:
                     //go to north pole
+                    System.Threading.Thread.Sleep(1000);
+                    mainArt = "The train is leaving for the north pole. \n" + Art.Train2();
+                    Opt_Helper = new OptionsHelper(mainArt);
+                    Console.Clear();
+                    Opt_Helper.DisplayOptions();
+                    
+                    System.Threading.Thread.Sleep(1000);
+                    mainArt = "The train is leaving for the north pole.. \n" + Art.Train3();
+                    Opt_Helper = new OptionsHelper(mainArt);
+                    Console.Clear();
+                    Opt_Helper.DisplayOptions();
+                    System.Threading.Thread.Sleep(1000);
+                    mainArt = "The train is leaving for the north pole... \n" + Art.Train4();
+                    Opt_Helper = new OptionsHelper(mainArt);
+                    Console.Clear();
+                    Opt_Helper.DisplayOptions();
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                    mainArt = "The train pulls up to the Train Depot and passengers scramble to disembark and board. \n" + Art.Train();
+                    Opt_Helper = new OptionsHelper(mainArt);
                     myGame.myNorthPoleScene.Run();
                     return;
                 case 2:

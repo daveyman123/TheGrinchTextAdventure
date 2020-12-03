@@ -21,6 +21,7 @@ namespace TheGrinch.Scenes
             scenes = new List<string>();
             myGame = game;
             
+            
         }
 
         virtual public void Run()

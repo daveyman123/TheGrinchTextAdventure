@@ -33,7 +33,7 @@ namespace TheGrinch.HelperFunctions
             
         }
 
-        private void DisplayOptions()
+        public void DisplayOptions()
         {
 
            

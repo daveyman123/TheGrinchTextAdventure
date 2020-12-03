@@ -8,8 +8,9 @@ namespace TheGrinch.HelperFunctions
     {
        
         public static bool QuitConsole()
-        { 
-            string prompt = "Are you sure you want to exit? \n";
+        {
+            Console.WriteLine(Art.SnowMan());
+            string prompt = "\nAre you sure you want to exit? \n";
             string[] options = new string[] { "Yes", "No" };
             OptionsHelper Opt_Helper = new OptionsHelper(prompt, options);
             int Choice = Opt_Helper.MenuChoice();
