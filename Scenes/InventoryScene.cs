@@ -12,7 +12,7 @@ namespace TheGrinch.Scenes
         public InventoryScene(Game game) : base(game)
         {
             art = Art.bag();
-            text = "";
+            text = art + desc + "\n\n" + "select an item to view its description \n";
             myGame = game;
 
         }

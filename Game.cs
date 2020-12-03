@@ -25,10 +25,16 @@ namespace TheGrinch
         public Scene mySuzysHouseScene;
         public Scene myBobbysHouseScene;
         public Scene myWorkshopScene;
+        public Scene mySantaScene;
+        public Scene myGetNameScene;
+
+        //store the players name
+        public string Name;
         public Game()
         {
-         
-            
+
+            //instantiate players name as blank
+            Name = "";
             //instantiate inventory
             myInventory = new Inventory();
 
@@ -36,6 +42,7 @@ namespace TheGrinch
             MusicPlayer = new SoundPlayer();
 
             //instantiate scenes
+            myGetNameScene = new GetName(this);
             myTitleScene = new TitleScene(this);
             myCreditsScene = new CreditsScene(this);
             myMainAreaScene = new MainArea(this);
@@ -46,6 +53,7 @@ namespace TheGrinch
             myMainStreetScene = new MainStreet(this);
             myBobbysHouseScene = new BobbysHouse(this);
             mySuzysHouseScene = new SuzysHouse(this);
+            mySantaScene = new SantasHouse(this);
             
         }
 
@@ -60,7 +68,7 @@ namespace TheGrinch
         {
 
             Console.Clear();
-            myBobbysHouseScene.Run();
+            myTitleScene.Run();
 
 
         }
@@ -80,6 +88,16 @@ namespace TheGrinch
         public static void setPlay(bool playState)
         {
             play = playState;
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
         }
     }
 }

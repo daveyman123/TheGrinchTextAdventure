@@ -18,7 +18,7 @@ namespace TheGrinch.Scenes
         {
             Scene.AddScene(this.GetType().Name);
 
-            string[] options = new string[] { "Go to Santa's Workshop", "the Reindeer Stable", "open the Mail Box", "leave the North Pole","View INVENTORY", "Exit Game" };
+            string[] options = new string[] { "Go to Santa's Workshop", "Got to Santa's House", "Open the Mail Box", "Leave the North Pole","View INVENTORY", "Exit Game" };
             string northPoleArt = Art.MailBox();
             HelperFunctions.OptionsHelper Opt_Helper = new HelperFunctions.OptionsHelper(northPoleArt, options);
             int Choice = Opt_Helper.MenuChoice();
@@ -28,7 +28,7 @@ namespace TheGrinch.Scenes
                     myGame.myWorkshopScene.Run();
                     return;
                 case 2:
-                    // go to stable
+                    myGame.mySantaScene.Run();
                     return;
                 case 3:
                     //open mailbox

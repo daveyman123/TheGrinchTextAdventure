@@ -9,7 +9,7 @@ namespace TheGrinch.HelperFunctions
 
     {
         int selectedIndex;
-        String[] opt = new String[] { "Go to the North Pole", "Go to the Grinches Mansion", "Go to Main Street","View INVENTORY", "Exit Game" };
+        String[] opt = new String[] { "Go to the North Pole(GO HERE FIRST)", "Go to the Grinches Mansion", "Go to Main Street","View INVENTORY", "Exit Game" };
         string prompt = "";
        
 
@@ -109,5 +109,6 @@ namespace TheGrinch.HelperFunctions
             } while (keyPressed != ConsoleKey.Enter);
             return selectedIndex +1;
         }
+
     }
 }

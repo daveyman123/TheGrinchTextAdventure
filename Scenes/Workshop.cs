@@ -18,8 +18,9 @@ namespace TheGrinch.Scenes
         public override void Run()
         {
             Scene.AddScene(this.GetType().Name);
-            text = "There is lots of hustle and bustle here in the hours before christmas";
-            Item BPresent = new Item("Bobbys Present", "a well wrapped toy intended for little Bobby on main street");
+            text = "There is lots of hustle and bustle here in the hours before christmas. In the return to \n" +
+                "sender bin is a present marked BOBBY 1421 Main Street";
+            Item BPresent = new Item("Bobbys Present", "The present for bobby is a toy train in a box.");
             Items WorkshopItems = new Items(BPresent);
             string[] options = new string[] { "Pick up Bobbys Present", "Leave Bobby's Present", "leave the Workshop","View INVENTORY", "Exit Game" };
             string northPoleArt = text + Art.Elf2() + presentText;

@@ -51,6 +51,8 @@ namespace TheGrinch.Scenes
 
             //write it all to console and get the choice using the OptionsHelper class
 
+
+
             int choice = opt_helper.MenuChoice();
 
             //switch on the choice
@@ -58,7 +60,8 @@ namespace TheGrinch.Scenes
             switch (choice)
             {
                 case 1:
-                    myGame.myMainAreaScene.Run();
+                    
+                    myGame.myGetNameScene.Run();
                     return;
                 case 2:
                     if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
@@ -66,9 +69,7 @@ namespace TheGrinch.Scenes
                 case 3:
                     myGame.myCreditsScene.Run();
                     return;
-                case 4:
-                    myGame.myInventoryScene.Run();
-                    return;
+
 
             }
 

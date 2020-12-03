@@ -62,32 +62,20 @@ namespace TheGrinch
          \,`////""""\\\\`,/
          | )//_ o  o _\\( |
           \/|(_) () (_)|\/
-            \   '--'   /
+            \   '--'   /  Welcome to the North Pole!!
             _:.______.;_
           /| | /`\/`\ | |\
          / | | \_/\_/ | | \
         /  |o`""""""""`o|  \
        `.__/     ()     \__.'
-       /  /              \  \
-       |  | ___  ()  ___ |  |
-       /  \|---|    |---|/  \
-       |  (|   | () |   |)  |
-       \  /;---'    '---;\  /
-        `` \ ___ /\ ___ / ``
-            `|  |  |  |`
-             |  |  |  |
-             | =|  |= |
-      jgs    |  |  |  |
-       _._  |\|\/||\/|/|  _._
-      / .-\ |~~~~||~~~~| /-. \
-      | \__.'    ||    '.__/ |
-      \          ||          /
-       `---------''---------`
+
+      jgs    
+
 "; }
 
         public static string Grinch()
         {
-            return HelperFunctions.ArtReadHelper.ascii("Grinch");
+            return HelperFunctions.ArtReadHelper.ascii("Grinch1");
         }
         public static string Reindeer() { return HelperFunctions.ArtReadHelper.ascii("Reindeer"); }
 
@@ -164,6 +152,28 @@ namespace TheGrinch
         public static string MainStreet() { return ArtReadHelper.ascii("mainstreet");
  }
         public static string Ham() { return HelperFunctions.ArtReadHelper.ascii("ham"); }
+
+        public static string Santa() { return @"
+     ____
+   {} _  \
+      |__ \
+     /_____\
+     \o o)\)_______
+     (<  ) /#######\
+   __{'~` }#########|
+  /  {   _}_/########|
+ /   {  / _|#/ )####|
+/   \_~/ /_ \  |####|
+\______\/  \ | |####|
+ \__________\|/#####|
+  |__[X]_____/ \###/
+  /___________\
+   |    |/    |
+   |___/ |___/
+  _|   /_|   /
+ (___,_(___,_)
+snd
+"; }
     }
 
 }
