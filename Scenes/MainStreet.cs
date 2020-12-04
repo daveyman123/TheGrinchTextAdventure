@@ -27,6 +27,18 @@ namespace TheGrinch.Scenes
             {
                 case 1:
                     //go to susys house
+                    if (myGame.myInventory.Contains("Elf Hat"))
+                    {
+                        addText = "";
+                        myGame.mySuzysHouseScene.Run();
+
+                    }
+                    else
+                    {
+                        addText = "\n" + "You need to be an elf to enter houses on main street!";
+                        myGame.myMainStreetScene.Run();
+
+                    }
                     return;
                 case 2:
                     // go to bobby's house
