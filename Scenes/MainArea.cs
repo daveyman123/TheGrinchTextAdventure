@@ -61,17 +61,15 @@ namespace TheGrinch.Scenes
                     Opt_Helper = new OptionsHelper(mainArt);
                     myGame.myNorthPoleScene.Run();
                     return;
+
                 case 2:
-                    //go to grinch's mansion
-                    return;
-                case 3:
                     //go to Main street
                     myGame.myMainStreetScene.Run();
                     return;
-                case 4:
+                case 3:
                     myGame.myInventoryScene.Run();
                     return;
-                case 5:
+                case 4:
                     //System.Threading.Thread.Sleep(100);
                     if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainAreaScene.Run(); }
                     return;

@@ -20,7 +20,7 @@ namespace TheGrinch.Scenes
 
             AddScene(this.GetType().Name);
 
-            options = new string[]{ "Go to Suzy's house", "Go to Bobby's house", "Leave Main Street", "View INVENTORY", "Exit Game"};
+            options = new string[]{ "Go to Suzy's house", "Go to Bobby's house", "Go to the Grinch's Mansion","Leave Main Street", "View INVENTORY", "Exit Game"};
             base.Run();
             //Choice = opt_helper.MenuChoice();
             switch(optionsChoice)
@@ -57,14 +57,18 @@ namespace TheGrinch.Scenes
                     
                     return;
                 case 3:
+                    myGame.myGrinchMansionScene.Run();
+                   return;
+
+                case 4:
                     addText = "";
                     myGame.myMainAreaScene.Run();
                     return;
-                case 4:
+                case 5:
                     addText = "";
                     myGame.myInventoryScene.Run();
                     return;
-                case 5:
+                case 6:
                     if (ConsoleUtils.QuitConsole()) { Environment.Exit(0); } else { myGame.myMainStreetScene.Run(); }
                     return;
             }

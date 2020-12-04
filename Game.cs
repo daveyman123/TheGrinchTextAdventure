@@ -27,6 +27,7 @@ namespace TheGrinch
         public Scene myWorkshopScene;
         public Scene mySantaScene;
         public Scene myGetNameScene;
+        public Scene myGrinchMansionScene;
 
         //store the players name
         public string Name;
@@ -54,6 +55,7 @@ namespace TheGrinch
             myBobbysHouseScene = new BobbysHouse(this);
             mySuzysHouseScene = new SuzysHouse(this);
             mySantaScene = new SantasHouse(this);
+            myGrinchMansionScene = new GrinchsMansion(this);
             
         }
 
