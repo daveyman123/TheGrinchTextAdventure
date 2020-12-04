@@ -12,7 +12,7 @@ namespace TheGrinch.Scenes
         {
 
             addText = "In the return to\n" +
-        "sender bin is a present marked BOBBY 1421 Main Street";
+        "senders bin is a present addressed to BOBBY 1421 Main Street, You get a feeling this shouldnt be here though";
 
 
 
@@ -25,7 +25,7 @@ namespace TheGrinch.Scenes
             text = "There is lots of hustle and bustle here in the hours before christmas. " + addText;
            Item BPresent = new Item("Bobbys Present", "The present for bobby is a toy train in a box.");
             Items WorkshopItems = new Items(BPresent);
-            string[] options = new string[] { "Pick up Bobbys Present", "Leave Bobby's Present", "leave the Workshop","View INVENTORY", "Exit Game" };
+            string[] options = new string[] { "Pick up Bobbys Present", "Leave Bobby's Present", "Leave the Workshop","View INVENTORY", "Exit Game" };
             string northPoleArt = text + Art.Elf2() + presentText;
             HelperFunctions.OptionsHelper Opt_Helper = new HelperFunctions.OptionsHelper(northPoleArt, options);
             int Choice = Opt_Helper.MenuChoice();
