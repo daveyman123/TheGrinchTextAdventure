@@ -40,7 +40,7 @@ namespace TheGrinch.HelperFunctions
             
 
             string output = "";
-            output += "\n " + prompt + "\n";
+            output += "\n" + prompt + "\n";
             output += "\nUse the arrow keys to select your choice and press enter\n";
             output += "\nYour options are: \n";
             

@@ -26,7 +26,7 @@ namespace TheGrinch.Scenes
             options = new string[]{ "take letter", "leave letter", "leave mailbox", "Exit Game" };
             
             //create a new item
-            Item letterItem = new Item("letter", "The hand writing on the letter is hard to make out but it appears to be a letter addressed to Santa \n'WE ARE CRYING BECAUSE WE DID NOT RECIEVE OUR PRESENTS THIS YEAR!!' signed Susy.");
+            Item letterItem = new Item("letter", "The hand writing on the letter is hard to make out but it appears to be a letter addressed to Santa \n'WE ARE CRYING BECAUSE WE DID NOT RECIEVE OUR PRESENTS THIS YEAR!!' signed Suzy.");
             //create specific scene items
             Items mailboxItems = new Items(letterItem);
 
