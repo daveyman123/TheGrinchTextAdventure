@@ -89,6 +89,22 @@ namespace TheGrinch.Scenes
              
 
                 }
+                else if (GetScene()[scenes.Count - 1] == "SuzysHouse")
+                {
+                    myGame.mySuzysHouseScene.Run();
+                    selectedItem = 0;
+
+
+
+                }
+                else if (GetScene()[scenes.Count - 1] == "GrinchsMansion")
+                {
+                    myGame.myGrinchMansionScene.Run();
+                    selectedItem = 0;
+
+
+
+                }
 
                 else
                 {

@@ -7,7 +7,7 @@ namespace TheGrinch.Scenes
     class SantasHouse : Scene
     {
         public string addText;
-        Item elfHat;
+        public Item elfHat;
         string northPoleArt;
         
         public SantasHouse(Game game) : base(game)

@@ -79,6 +79,7 @@ namespace TheGrinch
                 if (element.getName() == Name)
                 {
                     selectedItem = element;
+                    return selectedItem;
                 }
                 else
                     selectedItem = null;
