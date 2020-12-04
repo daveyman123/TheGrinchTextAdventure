@@ -31,7 +31,7 @@ namespace TheGrinch.Scenes
             switch (optionsChoice)
             {
                 case 1:
-                    if (!BHItems.Contains("Bobbys Present") && myGame.myInventory.Contains("Bobbys Present"))
+                    if (myGame.myInventory.Contains("Bobbys Present"))
                     {
                         art = Art.InHomePresents();
                         
