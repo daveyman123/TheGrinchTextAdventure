@@ -60,3 +60,11 @@ C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\Tree
 C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\TreePresent.txt
 C:\Users\daveyman123\source\repos\daveyman123\TheGrinchTextAdventure\bin\Debug\netcoreapp3.1\Art\Tree.txt
 C:\Users\daveyman123\source\repos\daveyman123\TheGrinchTextAdventure\bin\Debug\netcoreapp3.1\Art\TreePresent.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover1.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover2.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover3.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover4.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover5.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover6.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Art\flyover7.txt
+C:\Users\David\source\repos\TheGrinch\TheGrinch\bin\Debug\netcoreapp3.1\Audio\SantaHoHoHo.wav

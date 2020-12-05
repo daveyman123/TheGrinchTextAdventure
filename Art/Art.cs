@@ -75,6 +75,34 @@ namespace TheGrinch
         {
             return HelperFunctions.ArtReadHelper.ascii("Grinch1");
         }
+        public static string FlyOver1()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover1");
+        }
+        public static string FlyOver2()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover2");
+        }
+        public static string FlyOver3()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover3");
+        }
+        public static string FlyOver4()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover4");
+        }
+        public static string FlyOver5()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover5");
+        }
+        public static string FlyOver6()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover6");
+        }
+        public static string FlyOver7()
+        {
+            return HelperFunctions.ArtReadHelper.ascii("Flyover7");
+        }
         public static string Reindeer() { return HelperFunctions.ArtReadHelper.ascii("Reindeer"); }
 
 

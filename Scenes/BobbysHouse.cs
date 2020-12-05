@@ -27,7 +27,7 @@ namespace TheGrinch.Scenes
 
 
 
-            options = new string[] { "place down a present", "leave house", "View Inventory", "Exit Game" };
+            options = new string[] { "Place down a present", "Leave house", "View Inventory", "Exit Game" };
             base.Run();
             switch (optionsChoice)
             {
@@ -42,6 +42,7 @@ namespace TheGrinch.Scenes
 + art + addtext;
                         myGame.myInventory.RemoveItem(myGame.myInventory.returnItem("Bobbys Present"));
                         placed = true;
+                        myGame.SetFinished2(true);
                     }
                     else if (!placed)
                     {
@@ -53,7 +54,14 @@ namespace TheGrinch.Scenes
                     return;
                 case 2:
                     addtext = "";
-                    myGame.myMainStreetScene.Run();
+                    if (myGame.GetFinished1() == true && myGame.GetFinished2() == true)
+                    {
+                        myGame.myFlyOverScene.Run();
+                    }
+                    else
+                    {
+                        myGame.myMainStreetScene.Run();
+                    }
 
                     return;
 

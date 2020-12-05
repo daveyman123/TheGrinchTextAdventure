@@ -28,9 +28,15 @@ namespace TheGrinch
         public Scene mySantaScene;
         public Scene myGetNameScene;
         public Scene myGrinchMansionScene;
+        public Scene myFlyOverScene;
 
         //store the players name
         public string Name;
+
+        //goal for game
+        //could do better on protection levels
+        public bool finished1;
+        public bool finished2;
         public Game()
         {
 
@@ -56,6 +62,11 @@ namespace TheGrinch
             mySuzysHouseScene = new SuzysHouse(this);
             mySantaScene = new SantasHouse(this);
             myGrinchMansionScene = new GrinchsMansion(this);
+            myFlyOverScene = new FlyOver(this);
+
+            //instantiate game goal bool
+            finished1 = false;
+            finished2 = false;
             
         }
 
@@ -70,11 +81,12 @@ namespace TheGrinch
         {
 
             Console.Clear();
-            Item itm = new Item("Elf Hat", "adsf");
-            Item itm2 = new Item("letter", "adsf");
-            myInventory.invAdd(itm);
-            myInventory.invAdd(itm2);
-            myGrinchMansionScene.Run();
+            // Item itm = new Item("Elf Hat", "adsf");
+            // Item itm2 = new Item("letter", "adsf");
+            // myInventory.invAdd(itm);
+            //myInventory.invAdd(itm2);
+            myFlyOverScene.Run();
+            myCreditsScene.Run();
 
 
         }
@@ -104,6 +116,25 @@ namespace TheGrinch
         public void SetName(string name)
         {
             Name = name;
+        }
+
+        //get whether game is finished
+        public bool GetFinished1()
+        {
+            return finished1;
+        }
+        public bool GetFinished2()
+        {
+            return finished2;
+        }
+
+        //set whether game is finished
+        public void SetFinished1(bool fnsh) {
+            finished1 = fnsh;
+        }
+        public void SetFinished2(bool fnsh)
+        {
+            finished2 = fnsh;
         }
     }
 }

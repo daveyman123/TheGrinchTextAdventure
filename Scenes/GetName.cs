@@ -15,6 +15,7 @@ namespace TheGrinch.Scenes
         }
         public override void Run()
         {
+            Console.Clear();
             Scene.AddScene(this.GetType().Name);
             options = new string[] { "ok, " + myGame.Name+ " to progress through the game", 
             "you will be selecting from this menu",

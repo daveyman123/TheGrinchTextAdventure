@@ -9,6 +9,7 @@ namespace TheGrinch.Scenes
         public string addText;
         public Item elfHat;
         string northPoleArt;
+        string thisText;
         
         public SantasHouse(Game game) : base(game)
         {
@@ -16,16 +17,19 @@ namespace TheGrinch.Scenes
             myGame = game;
             addText = "";
             elfHat = new Item("Elf Hat", "It's a nice hat, but the holes for ears are kind of out of place, unless your maybe an elf");
-            text = "Santa greets you at the door, 'HERE take this hat', Santa \n" +
+            thisText = "Santa greets you at the door, 'HERE take this hat', Santa \n" +
                  "points to his watch as if that explains it all \n" +
                  "'HO HO HO-RRibly sorry but I am out of time to entertain visitors'\n " + northPoleArt + "\n" + addText;
-
+            text = thisText;
 
         }
 
         public override void Run()
         {
-           
+           if (myGame.myInventory.Contains("Elf Hat")){
+                text = "HO HO HO-nestly you better get a run on! leave!'\n " + northPoleArt + "\n" + addText;
+            }
+
             Scene.AddScene(this.GetType().Name);
 
             options = new string[] { "Ask why Santa is in a hurry", "Ask what you can do to help with Christmas", "Take magical hat", "Leave Santa's House", "View INVENTORY", "Exit Game" };
@@ -63,9 +67,7 @@ namespace TheGrinch.Scenes
                     else
                     {
                         addText = myGame.myInventory.invAdd(elfHat);
-                        text = "Santa greets you at the door, 'HERE take this hat', Santa \n" +
-     "points to his watch as if that explains it all \n" +
-     "'HO HO HO-RRibly sorry but I am out of time to entertain visitors'\n " + northPoleArt + "\n" + addText;
+                        text = "HO HO HO-nestly you better get a run on! leave!'\n " + northPoleArt + "\n" + addText;
                     }
 
                     myGame.mySantaScene.Run();
@@ -73,8 +75,7 @@ namespace TheGrinch.Scenes
 
                     return;
                 case 4:
-                    //open mailbox
-                    
+                    text = thisText;
                     myGame.myNorthPoleScene.Run();
                     return;
                 case 5:
