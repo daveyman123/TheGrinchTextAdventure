@@ -33,6 +33,7 @@ namespace TheGrinch.Scenes
             Console.WriteLine("\nDownload the source Code here: https://github.com/daveyman123/TheGrinchTextAdventure");
    
             Console.ReadLine();
+            Environment.Exit(0);
         }
     }
 }

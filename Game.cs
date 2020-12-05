@@ -81,12 +81,9 @@ namespace TheGrinch
         {
 
             Console.Clear();
-            // Item itm = new Item("Elf Hat", "adsf");
-            // Item itm2 = new Item("letter", "adsf");
-            // myInventory.invAdd(itm);
-            //myInventory.invAdd(itm2);
-            myFlyOverScene.Run();
-            myCreditsScene.Run();
+  
+            myTitleScene.Run();
+            
 
 
         }

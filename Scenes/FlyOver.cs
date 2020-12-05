@@ -34,7 +34,7 @@ namespace TheGrinch.Scenes
 
         Opt_Helper = new OptionsHelper(text,options);
 
-            options = new string[] { "" };
+            options = new string[] { "You won the game!!" };
 
 
    
@@ -100,8 +100,8 @@ namespace TheGrinch.Scenes
             Console.Clear();
             Opt_Helper.DisplayOptions();
             System.Threading.Thread.Sleep(5000);
-           
 
+            myGame.myCreditsScene.Run();
 
 
         }
