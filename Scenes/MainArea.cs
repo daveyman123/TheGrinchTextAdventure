@@ -13,8 +13,8 @@ namespace TheGrinch.Scenes
         {
             mainArt = "The train pulls up to the Train Depot and passengers scramble to disembark and board. \n"+Art.Train();
 
-
-            Opt_Helper = new OptionsHelper(mainArt);
+            options = new string[]{ "Go to the North Pole","Go to Main Street","View INVENTORY","EXIT GAME"};
+            Opt_Helper = new OptionsHelper(mainArt,options);
         }
 
 
@@ -30,9 +30,9 @@ namespace TheGrinch.Scenes
             mainSoundPlayer.Load();
             mainSoundPlayer.Play();
              }
-            
 
 
+           
             int Choice = Opt_Helper.MenuChoice();
 
             switch (Choice)
@@ -41,24 +41,24 @@ namespace TheGrinch.Scenes
                     //go to north pole
                     System.Threading.Thread.Sleep(1000);
                     mainArt = "The train is leaving for the north pole. \n" + Art.Train2();
-                    Opt_Helper = new OptionsHelper(mainArt);
+                    Opt_Helper = new OptionsHelper(mainArt,options);
                     Console.Clear();
                     Opt_Helper.DisplayOptions();
                     
                     System.Threading.Thread.Sleep(1000);
                     mainArt = "The train is leaving for the north pole.. \n" + Art.Train3();
-                    Opt_Helper = new OptionsHelper(mainArt);
+                    Opt_Helper = new OptionsHelper(mainArt,options);
                     Console.Clear();
                     Opt_Helper.DisplayOptions();
                     System.Threading.Thread.Sleep(1000);
                     mainArt = "The train is leaving for the north pole... \n" + Art.Train4();
-                    Opt_Helper = new OptionsHelper(mainArt);
+                    Opt_Helper = new OptionsHelper(mainArt,options);
                     Console.Clear();
                     Opt_Helper.DisplayOptions();
                     System.Threading.Thread.Sleep(1000);
                     Console.Clear();
                     mainArt = "The train pulls up to the Train Depot and passengers scramble to disembark and board. \n" + Art.Train();
-                    Opt_Helper = new OptionsHelper(mainArt);
+                    Opt_Helper = new OptionsHelper(mainArt,options);
                     myGame.myNorthPoleScene.Run();
                     return;
 

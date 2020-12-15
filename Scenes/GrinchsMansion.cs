@@ -60,12 +60,8 @@ namespace TheGrinch.Scenes
                         
 
                         addText = "\nYou show the Grinch Suzy's letter\n\n" +
-                            "the Grinch squints at the hastily written letter through spectacles\n" +
-                            "suddenly the Grinch's demeanor begins to change\n" +
-                            "tears well up in his eyes and he covers his chest with his hand\n" +
-                            "'I never knew someone could be so caring and ME, so heartless\n" +
-                            "I truly see the joy of christmas again and it seems it is about giving'\n" +
-                            "'HERE, Take this gift back to Suzy' the Grinch reaches into a pile of presents and hands you one";
+                            "The Grinch reads the letter and his demeanor changes, his heart grows 3 sizes" +
+                            "and he says 'I never realized a child could be so unselfish'";
                         //add suzys present to the players inventory if its not already there
                         if (myGame.myInventory.Contains("Suzys Present"))
                         {

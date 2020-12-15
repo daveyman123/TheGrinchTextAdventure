@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\source\\repos\\TheGrinch\\TheGrinch\\TheGrinch.csproj": {}
+    "C:\\Users\\Dgraf\\source\\repos\\TheGrinchTextAdventure\\TheGrinch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\source\\repos\\TheGrinch\\TheGrinch\\TheGrinch.csproj": {
+    "C:\\Users\\Dgraf\\source\\repos\\TheGrinchTextAdventure\\TheGrinch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\source\\repos\\TheGrinch\\TheGrinch\\TheGrinch.csproj",
+        "projectUniqueName": "C:\\Users\\Dgraf\\source\\repos\\TheGrinchTextAdventure\\TheGrinch.csproj",
         "projectName": "TheGrinch",
-        "projectPath": "C:\\Users\\David\\source\\repos\\TheGrinch\\TheGrinch\\TheGrinch.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\source\\repos\\TheGrinch\\TheGrinch\\obj\\",
+        "projectPath": "C:\\Users\\Dgraf\\source\\repos\\TheGrinchTextAdventure\\TheGrinch.csproj",
+        "packagesPath": "C:\\Users\\Dgraf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dgraf\\source\\repos\\TheGrinchTextAdventure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dgraf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "System.Windows.Extensions": {
               "target": "Package",
@@ -58,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

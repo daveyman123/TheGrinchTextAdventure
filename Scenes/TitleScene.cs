@@ -28,7 +28,7 @@ namespace TheGrinch.Scenes
 
 
             //assign art to string properties
-            art = Art.Elf();
+            art = "";
             name = ArtReadHelper.ascii("Title");
             combinedArt = name + "\n" + art;
             //create some options
